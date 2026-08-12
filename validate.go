@@ -1,0 +1,14 @@
+package vaultsdk
+
+import "github.com/ByteDeskAI/bytedesk-sdk-dependencies/plugin"
+
+// ValidateDir loads plugin.json via the common contract and requires
+// targets to include vault (authoring/pack: version required).
+func ValidateDir(dir string) (plugin.Manifest, error) {
+	return plugin.LoadDirForHost(dir, plugin.TargetVault, true)
+}
+
+// ValidateDirDiscover is the vault enable/scan gate (version optional).
+func ValidateDirDiscover(dir string) (plugin.Manifest, error) {
+	return plugin.LoadDirForHost(dir, plugin.TargetVault, false)
+}
