@@ -1,5 +1,11 @@
 # Changelog
 
+## [Unreleased]
+
+### Changed
+
+- docs: SDK SemVer is independent of `sdk-dependencies`; `go.mod` `require` is the pin (this module is already `0.1.1` requiring `v0.1.2`)
+
 ## [0.1.1] - 2026-08-12
 
 ### Added

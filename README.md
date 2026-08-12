@@ -26,4 +26,12 @@ Gateway plugins use `bytedesk-remote-gateway-plugin-sdk` (same inherited
 Manifest, `GATEWAY_PLUGIN_*`). A plugin that lists both targets can import
 either SDK for serve/validate; pack once.
 
+## Versioning
+
+This SDK’s SemVer (`VERSION`) is independent of `bytedesk-sdk-dependencies`.
+`go.mod` `require`s the dependency revision to use; those version numbers
+need not match (this module is already an example: SDK `0.1.1` requires
+dependencies `v0.1.2`). Bump this repo when the vault SDK changes. Bump
+the `require` when adopting a newer common contract.
+
 See gateway ADR 0014.
