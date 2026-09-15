@@ -4,6 +4,7 @@
 
 ### Changed
 
+- Adopt `bytedesk-sdk-dependencies v0.4.0-rc.11` for the coordinated plugin contract migration; Vault SDK versioning remains independent.
 - docs: SDK SemVer is independent of `sdk-dependencies`; `go.mod` `require` is the pin (this module is already `0.1.1` requiring `v0.1.2`)
 
 ## [0.1.2] - 2026-08-13
